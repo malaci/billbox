@@ -1,0 +1,110 @@
+
+@font-face {
+    font-family: 'chocobold';
+    src: url('chocb___-webfont.eot');
+    src: url('chocb___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('chocb___-webfont.woff') format('woff'),
+         url('chocb___-webfont.ttf') format('truetype'),
+         url('chocb___-webfont.svg#chocobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'chocoregular';
+    src: url('chocrg__-webfont.eot');
+    src: url('chocrg__-webfont.eot?#iefix') format('embedded-opentype'),
+         url('chocrg__-webfont.woff') format('woff'),
+         url('chocrg__-webfont.ttf') format('truetype'),
+         url('chocrg__-webfont.svg#chocoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'x_haim_revolutionsregular';
+    src: url('x_hrvrg_-webfont.eot');
+    src: url('x_hrvrg_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('x_hrvrg_-webfont.woff') format('woff'),
+         url('x_hrvrg_-webfont.ttf') format('truetype'),
+         url('x_hrvrg_-webfont.svg#x_haim_revolutionsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'x_haim_reloadedregular';
+    src: url('x_hrlrg_-webfont.eot');
+    src: url('x_hrlrg_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('x_hrlrg_-webfont.woff') format('woff'),
+         url('x_hrlrg_-webfont.ttf') format('truetype'),
+         url('x_hrlrg_-webfont.svg#x_haim_reloadedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'haim_revolutionsregular';
+    src: url('hairvrg_-webfont.eot');
+    src: url('hairvrg_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('hairvrg_-webfont.woff') format('woff'),
+         url('hairvrg_-webfont.ttf') format('truetype'),
+         url('hairvrg_-webfont.svg#haim_revolutionsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'haim_reloadedregular';
+    src: url('hairlrg_-webfont.eot');
+    src: url('hairlrg_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('hairlrg_-webfont.woff') format('woff'),
+         url('hairlrg_-webfont.ttf') format('truetype'),
+         url('hairlrg_-webfont.svg#haim_reloadedregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*
+
+
+	*{margin:0;padding:0;}
+	body{color:#333;font-family:"Rutz_OERegularPro",arial;font-size:16px; }
+	#container{
+	padding:130px 483px 0px 40px;
+	height:1201px;
+	width:363px;
+	margin:0 auto;
+	background:url(rutz.jpg) center top no-repeat;
+	position:relative;
+	}
+  h1,h2,h3,h4,h5,h6{font-weight:normal;}
+  h1{font-family:"Rutz_OEHeavyPro",serif;font-size:140px;text-shadow:0px 2px 1px #fff;letter-spacing:-2px;}
+  h2{font-family:"Rutz_OEMediumPro",arial,sans-serif;font-size:40px;margin-bottom:0.5em;color:#888;line-height:40px;}
+  p{font-size:16px; line-height:21px;}
+	p{margin-bottom:10px;}
+	.endquote{text-align:left;font-family:"Rutz_OEBoldPro",arial;padding-left:10px;font-size:18px;}
+	#footer{
+	position:absolute;
+	bottom:0;
+	right:40px;
+	padding:10px 0;
+	color:#fff;
+	}
+	a{font-family:"Rutz_OEBoldPro",arial;color: #fff;}*/
+  

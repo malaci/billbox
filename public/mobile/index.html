@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>
+    <html class="no-js iem7">
+    <![endif]-->
+    <!--[if (gt IEMobile 7)|!(IEMobile)]>
+        <!-->
+        <html class="no-js">
+        <!--<![endif]-->
+        <head dir="rtl" lang="he">
+            <meta charset="utf-8">
+            <title>Billbox</title>
+            <meta name="description" content="">
+            <meta name="HandheldFriendly" content="True">
+            <meta name="MobileOptimized" content="320">
+            <meta http-equiv="cleartype" content="on">
+            <meta name="author" content="Hagai Asaban">
+            <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <meta name="apple-mobile-web-app-capable" content="yes">
+            <meta name="apple-mobile-web-app-status-bar-style" content="black">
+            <meta name="format-detection" content="telephone=no">
+            <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/touch/apple-touch-icon-144x144-precomposed.png">
+            <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/touch/apple-touch-icon-114x114-precomposed.png">
+            <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/touch/apple-touch-icon-72x72-precomposed.png">
+            <link rel="apple-touch-icon-precomposed" href="img/touch/apple-touch-icon-57x57-precomposed.png">
+            <!--<link rel="shortcut icon" href="img/touch/apple-touch-icon.png">-->
+            <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+            <!-- Tile icon for Win8 (144x144 + tile color) -->
+            <meta name="msapplication-TileImage" content="img/touch/apple-touch-icon-144x144-precomposed.png">
+            <meta name="msapplication-TileColor" content="#222222">
+            <!-- Main Stylesheet -->
+            <link rel="stylesheet" href="css/normalize.css">
+            <link rel="stylesheet" href="css/main.css">            
+            <link rel="stylesheet" href="css/fonts/font.css">
+            <link rel="stylesheet" href="css/lungo/lungo2.css">
+            <link rel="stylesheet" href="css/lungo/lungo.icon.css">
+            <link rel="stylesheet" href="css/lungo/lungo.icon.brand.css">
+            <link rel="stylesheet" href="css/lungo/theme.lungo.css" id="theme-stylesheet">
+            <!-- App Stylesheet -->
+            <link rel="stylesheet" href="css/colorbox.css">
+            <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        </head>
+        
+        <body class="app">
+            <section id="main" data-transition="slide" data-pull="normal">
+                <header id="main-header">
+                    <nav class="left">
+                        <a href="#panel" data-router="aside" class="button" data-icon="menu"></a>
+                    </nav>
+                    <img src="img/logo-white.png" alt="Billbox" class="title centered" />
+                    <nav class="right">
+                        <a href="#splash-login" data-router="section" class="button" data-icon="user"></a>
+                    </nav>
+                </header>
+                <article id="main-article" class="active indented list scroll">
+                    <ul id="bills" class="colorbox"></ul>
+                </article>
+                <footer>
+                    <nav>
+                        <a href="#" data-icon="search"></a>
+                        <a href="#" data-icon="refresh"></a>
+                        <a href="#" data-icon="share"></a>
+                        <a id="newMessages" href="#" data-icon="home" class="active"></a>
+                    </nav>
+                </footer>
+            </section>
+            <aside id="panel">
+                <header data-title="תפריט"></header>
+                <article class="active list">
+                    <div class="form">
+                        <fieldset data-icon="search">
+                            <input type="search" placeholder="...חפש חשבונית">
+                        </fieldset>
+                    </div>
+                    <ul>
+                        <li data-icon="vcard">
+                            <!--<a href="#layout" data-router="section" data-async="app/sections/layout.html">-->
+                            <a href="#" class="right">
+                                <strong>מי אנחנו</strong>
+                                <!--<div class="tag right">5</div>-->
+                            </a>
+                        </li>
+                        <li data-icon="book">
+                            <!--<a href="#layout" data-router="section" data-async="app/sections/layout.html">-->
+                            <a href="#" class="right">
+                                <strong>תקנון החברה</strong>
+                                <!--<div class="tag right">5</div>-->
+                            </a>
+                        </li>
+                        <li data-icon="phone">
+                            <!--<a href="#layout" data-router="section" data-async="app/sections/layout.html">-->
+                            <a href="#" class="right">
+                                <strong>צור קשר</strong>
+                                <!--<div class="tag right">5</div>-->
+                            </a>
+                        </li>
+                        <li data-icon="help">
+                            <!--<a href="#layout" data-router="section" data-async="app/sections/layout.html">-->
+                            <a href="#" class="right">
+                                <strong>עזרה</strong>
+                                <!--<div class="tag right">5</div>-->
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+            </aside>
+            <section id="splash-login" data-transition="slide">
+                <article class="active indented splash">
+                    <img alt="Billbox" src="img/logo.png">
+                    <form class="roundeds">
+                        <input type="text" placeholder="הכנס שם משתמש" id="txt-signup-name" value="">
+                        <input type="password" placeholder="הכנס סיסמא" id="txt-signup-password" value="">
+                        <a href="#back" data-router="section" class="button theme anchor large" data-icon="lock">
+                            <span class="icon lock"></span>התחבר</a>
+                        <h4>או הירשם באמצעות</h4>
+                        <a href="#back" data-router="section" class="button large" data-icon="brand facebook" style="border-radius: 20px;"></a>
+                        <a href="#back" data-router="section" class="button large cancel" data-icon="brand google-plus" style="border-radius: 20px;"></a>
+                        <a href="#back" data-router="section" class="button large" data-icon="brand twitter" style="background: #03b1ff; border-radius: 20px;"></a>
+                        <a href="#back" data-router="section" class="button secondary anchor" data-icon="home">
+                            <span class="icon home"></span>חזור</a>
+                    </form>
+                </article>
+            </section>
+            <!-- Lungo - Dependencies -->
+            <script src="js/jquery-1.10.1.min.js"></script>
+            <script src="js/quo.js"></script>
+            <script src="js/lungo.js"></script>
+            <script src="js/vendor/zepto.min.js"></script>
+            <script src="js/helper.js"></script>
+            <script src="js/moment.min.js"></script>
+            <script src="js/jquery.colorbox.js"></script>
+            <!-- Lungo - Sandbox App -->
+            <script>
+                Lungo.init({
+                    name: 'Billbox',
+                    history: false
+                });
+
+                function groupByDates() {
+                    // Month number to string
+                    var months = ['ינואר',
+                            'פבואר',
+                            'מרץ',
+                            'אפריל',
+                            'מאי',
+                            'יוני',
+                            'יולי',
+                            'אוגוסט',
+                            'ספטמבר',
+                            'אוקטובר',
+                            'נובמבר',
+                            'דצמבר'
+                    ];
+
+                    // Sorting the <li> by year
+                    $("#bills li").sort(function(a, b) {
+                        var yearA = $(a).children("span").text().split("/")[2],
+                            yearB = $(b).children("span").text().split("/")[2];
+                        return yearA < yearB;
+                    }).appendTo($("#bills"));
+
+                    // Grouping the <li> by year
+                    $("#bills li").each(function() {
+                        var year = $(this).children("span").text().split("/")[2];
+                        // If the grouping <li> doesn't exist, create it
+                        if ($("#bills li.year." + year).length === 0) {
+                            $("#bills").append($('<li class="anchor year ' + year + '">' + year + '<ul></ul></li>'));
+                        }
+                        // Add the current <li> to the corresponding grouping <li>
+                        $(this).appendTo($("#bills li.year." + year + " ul"));
+                    });
+
+                    // Sorting the <li> by month inside each grouping <li>
+                    $("#bills li.year ul").each(function() {
+                        $(this).children("li").sort(function(a, b) {
+                            var monthA = $(a).children("span").text().split("/")[1],
+                                monthB = $(b).children("span").text().split("/")[1];
+                            return monthA < monthB;
+                        }).appendTo($(this));
+                    });
+
+                    // Grouping the <li> by month inside each grouping <li>
+                    $("#bills li.year ul").each(function() {
+                        $this = $(this);
+                        $this.children("li").each(function() {
+                            var month = $(this).children("span").text().split("/")[1];
+                            // If the grouping <li> doesn't exist, create it
+                            if ($this.find("li.month." + month).length === 0) {
+                                $this.append($('<li class="anchor light month ' + month + '">' + months[month - 1] + '<ul></ul></li>'));
+                            }
+                            // Add the current <li> to the corresponding grouping <li>
+                            $(this).appendTo($this.find("li.month." + month + " ul")).addClass("item");
+                        });
+                    });
+                };
+
+
+                function GetBills() {
+                    $.ajax({
+                        type: 'GET',
+                        url: "http://"+window.location.host+"/api/calendarlist",
+                        dataType: "jsonp",
+                        success: function(data) {
+                            var items = [];
+                            var serverUrl = "http://"+window.location.host+"/";
+                            var googleViewerUrl = 'http://docs.google.com/viewer?url=';
+                            var messages_counter = 0;
+                            $.each(data, function(i, bill) {
+                                if (bill.file != '') {
+                                    messages_counter++;
+                                    var url = googleViewerUrl + serverUrl + 'download/' + bill.file + '&embedded=true';
+                                    var date = moment(new Date(bill.start * 1000).toDateString()).format("DD/MM/YYYY");
+                                    items.push('<li><span class="date">' + date + '</span>' +
+                                        '<a href="' + url + '" data-icon="left" class="left button blue"><span class="icon left"></span></a>' +
+                                        //'<header><span class="title centered">'+
+                                        '<img class="image right" src="' + serverUrl + bill.logo + '"/>' +
+                                        //'</span></header>' + 
+                                        '</li>');
+                                }
+                            }); // close each()
+                            var listItemsCounter = $("ul.colorbox > li").length;
+                            $("#bills").empty();
+                            $('#bills').append(items.join(''));
+                            $('#newMessages').find('.count').remove();
+                            Lungo.Element.count("#newMessages", messages_counter);
+
+                            if (listItemsCounter < messages_counter) {
+                                Lungo.Notification.success('החשבוניות נטענו',
+                                    'נטענו ' + messages_counter + ' חשבוניות חדשות',
+                                    'message',
+                                    1.5);
+                            }
+                            groupByDates();
+                        },
+                        error: function(e) {
+                            console.log(e);
+                        }
+                    });
+                };
+
+
+                $('document').ready(function() {
+                    GetBills();
+
+                    $(".colorbox").on("click", "a", function() {
+                        $.colorbox({
+                            href: $(this).attr('href'),
+                            iframe: true,
+                            width: "98%",
+                            height: "98%"
+                        });
+                    });
+
+                    // Javascript Code
+                    var pull_refresh = new Lungo.Element.Pull('#main-article', {
+                        onPull: "משוך על מנת לרענן",
+                        onRelease: "שחרר על מנת לקבל מידע חדש",
+                        onRefresh: "מרענן מידע מהשרת...",
+                        callback: function() {
+                            GetBills();
+                            pull_refresh.hide();
+                        }
+                    });
+                });
+            </script>
+            <!--<script src="js/iframePdf.js"></script>
+         Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+            <script>
+                var _gaq = [
+                    ["_setAccount", "UA-XXXXX-X"],
+                    ["_trackPageview"]
+                ];
+                (function(d, t) {
+                    var g = d.createElement(t),
+                        s = d.getElementsByTagName(t)[0];
+                    g.async = 1;
+                    g.src = ("https:" == location.protocol ? "//ssl" : "//www") + ".google-analytics.com/ga.js";
+                    s.parentNode.insertBefore(g, s)
+                }(document, "script"));
+            </script>
+        </body>
+        
+        </html>
